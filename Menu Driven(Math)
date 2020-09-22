@@ -1,0 +1,48 @@
+#include<stdio.h>
+int a,b;//global variable//
+void add()
+{
+    int c;
+    c=a+b;
+    printf("%d",c);
+}
+void subtract()
+{
+    int c;
+    c=a-b;
+    printf("%d",c);
+}
+void multiply()
+{
+    int c;
+    c=a*b;
+    printf("%d",c);
+}
+void divide()
+{
+    int c;
+    c=a/b;
+    printf("%d",c);
+}
+void main()
+{
+    printf("enter the value of a and b");
+    scanf("%d%d",&a,&b);
+    int x;
+    printf("enter 1 to add\nenter 2 to subtract\nenter 3 to multiply\nenter 4 for divide");
+    scanf("%d",&x);
+    switch(x)
+    {
+    case 1:
+        add();
+        break;
+    case 2:
+        subtract();
+        break;
+    case 3:
+        multiply();
+        break;
+    case 4:
+        divide();
+    }
+}
