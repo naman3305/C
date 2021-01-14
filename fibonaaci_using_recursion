@@ -1,0 +1,21 @@
+#include <stdio.h>
+/* Include other headers as needed */
+int main()
+{
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+  int n;
+  scanf("%d",&n);
+  for(int i=n-1;i>=0;i--){
+  printf("%d\n",fibo(i));
+  }
+    return 0;
+}
+
+int fibo(int n){
+  if(n==0||n==1)
+  	return n;
+  else
+    return (fibo(n-1)+fibo(n-2));
+  
+}
